@@ -71,6 +71,7 @@ You should see events logged in the console where the CLI is running.
 Submit test transactions using a desktop web browser (Chrome preferred):
 http://localhost:4242/
 
+After entering payment credentials and submitting an order, you may refresh the page to place additional orders.
 
 **5: View results**
 
