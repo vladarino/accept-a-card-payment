@@ -5,7 +5,7 @@ Cards are one of the most popular ways to pay online. Stripe offers several ways
 
 ## How to run locally
 
-This sample includes a Node implementation of the server in for the webhooks integration type: [using-webhooks](/using-webhooks) 
+This sample includes a Node implementation of the server for the webhooks integration type: [using-webhooks](/using-webhooks) 
 
 Follow the steps below to run locally.
 
