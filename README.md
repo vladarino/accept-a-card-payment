@@ -11,15 +11,17 @@ Follow the steps below to run locally.
 
 **1. Clone and configure the sample**
 
-Manually clone and configure the sample yourself:
+Manually clone and configure the sample yourself, by opening a terminal window then cloning the accept-a-card-payment repo:
 
 ```
 git clone https://github.com/vladarino/accept-a-card-payment
 ```
 
-Copy the .env.example file into a file named .env in the using-webhooks/server/node folder. For example:
+Go to the newly created `accept-a-card-payment` folder, then copy the .env.example file into a file named .env in the using-webhooks/server/node folder. 
+For example:
 
 ```
+cd accept-a-card-payment
 cp .env.example using-webhooks/server/node/.env
 ```
 
@@ -30,8 +32,6 @@ Replace the Keys in the .env file created above with your keys:
 ```
 STRIPE_PUBLISHABLE_KEY=<replace-with-your-publishable-key>
 STRIPE_SECRET_KEY=<replace-with-your-secret-key>
-
-
 ```
 
 You will set the ```STRIPE_WEBHOOK_SECRET``` entry in step 3 below
@@ -42,7 +42,7 @@ You will set the ```STRIPE_WEBHOOK_SECRET``` entry in step 3 below
 To run the Node server in `using-webhooks`:
 
 ```
-cd using-webhooks/server/node # there's a README in this folder with instructions
+cd using-webhooks/server/node
 npm install
 npm start
 ```
