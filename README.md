@@ -65,9 +65,19 @@ The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECR
 
 You should see events logged in the console where the CLI is running.
 
+
 **4. Access the application from a web browser:**
 
+Submit test transactions using a desktop web browser (Chrome preferred):
 http://localhost:4242/
+
+
+**5: View results**
+
+The terminal listening to webhooks (Step 3) will show webhook invocations.
+The terminal running the server (Step 2) will show an entry for each attempted transaction.
+The ``using-webhooks/server/node/log.txt`` log file will include a new line of transaction details for each completed transaction.
+
 
 
 Credits:
