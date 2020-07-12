@@ -3,15 +3,6 @@
 Cards are one of the most popular ways to pay online. Stripe offers several ways to accept card payments, depending on your business needs.
 
 
-<!-- prettier-ignore -->
-|     | Using webhooks | Without webhooks | Declining on card authentication |
-:--- | :--- | :--- | :---
-**Recommended for** | Businesses with a global customer base who want to add other payment methods  | Businesses with a global customer base who only want to accept cards and don't want to use webhooks  | Businesses who only have customers in the U.S. & Canada |
-**Bank authentication requests** | Automatically handles, no need for extra code  | Requires extra code to handle authentication  | Declines any payments that require authentication |
-**Payment flow** | Server -> Client | Client -> Server -> Client -> Server | Client -> Server |
-**Webhooks for post-payment fulfillment** | Recommended (scales better to future payment method) | Optional | Optional |
-
-
 ## How to run locally
 
 This sample includes a Node implementation of the server in for the webhooks integration type: [using-webhooks](/using-webhooks) 
