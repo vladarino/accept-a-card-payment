@@ -44,8 +44,10 @@ To run the Node server in `using-webhooks`:
 ```
 cd using-webhooks/server/node
 npm install
-npm start
+npm run start
 ```
+
+If you see any errors in the terminal after executing the ``npm run start`` command, kill any running ``node`` processes then tray again.
 
 **3. Run a webhook locally:**
 
