@@ -53,7 +53,9 @@ If you see any errors in the terminal after executing the ``npm run start`` comm
 
 To test the `using-webhooks` integration with a local webhook on your machine, you can use the Stripe CLI to easily spin one up.
 
-First [install the CLI](https://stripe.com/docs/stripe-cli) and [link your Stripe account](https://stripe.com/docs/stripe-cli#link-account).
+First, [install the CLI](https://stripe.com/docs/stripe-cli) and [link your Stripe account](https://stripe.com/docs/stripe-cli#link-account).
+
+Second, open a new terminal window and execute the following:
 
 ```
 stripe listen --forward-to localhost:4242/webhook
