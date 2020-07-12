@@ -57,7 +57,7 @@ First [install the CLI](https://stripe.com/docs/stripe-cli) and [link your Strip
 stripe listen --forward-to localhost:4242/webhook
 ```
 
-The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECRET` to this value in your .env file mentioned above.
+The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECRET` to this value in your .env file mentioned above and restart the server (CTRL-C, then repeat Step 2).
 
 You should see events logged in the console where the CLI is running.
 
