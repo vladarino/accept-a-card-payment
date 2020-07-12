@@ -14,7 +14,7 @@ Follow the steps below to run locally.
 Manually clone and configure the sample yourself:
 
 ```
-git clone https://github.com/vladarion/accept-a-card-payment
+git clone https://github.com/vladarino/accept-a-card-payment
 ```
 
 Copy the .env.example file into a file named .env in the using-webhooks/server/node folder. For example:
