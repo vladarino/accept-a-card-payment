@@ -5,6 +5,13 @@ const { resolve } = require("path");
 const env = require("dotenv").config({ path: "./.env" });
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
+////////   VA log file additions  ///////
+var fs = require('fs');
+
+
+
+
+
 app.use(express.static(process.env.STATIC_DIR));
 app.use(
   express.json({
@@ -36,7 +43,10 @@ app.post("/create-payment-intent", async (req, res) => {
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: calculateOrderAmount(items),
-    currency: currency
+    currency: currency,
+  // VA addition
+  // Verify your integration in this guide by including this parameter
+  metadata: {integration_check: 'accept_a_payment'},
   });
 
   // Send publishable key and PaymentIntent details to client
@@ -52,6 +62,7 @@ app.post("/create-payment-intent", async (req, res) => {
 app.post("/webhook", async (req, res) => {
   let data, eventType;
 
+  
   // Check if webhook signing is configured.
   if (process.env.STRIPE_WEBHOOK_SECRET) {
     // Retrieve the event by verifying the signature using the raw body and secret.
@@ -81,6 +92,15 @@ app.post("/webhook", async (req, res) => {
     // Fulfill any orders, e-mail receipts, etc
     // To cancel the payment after capture you will need to issue a Refund (https://stripe.com/docs/api/refunds)
     console.log("💰 Payment captured!");
+    
+    // VA log file addition
+	let event2 = JSON.stringify(req.body);
+	fs.appendFile('log.txt', 'Response object: '+event2+'\r\n', function (err) {
+  		if (err) throw err;
+  		console.log('Completed order saved in log file!');
+	});
+	
+
   } else if (eventType === "payment_intent.payment_failed") {
     console.log("❌ Payment failed.");
   }

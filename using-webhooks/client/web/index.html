@@ -2,21 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Stripe Card Elements sample</title>
+    <title>Prissy on the Moon Book Store</title>
     <meta name="description" content="A demo of Stripe Payment Intents" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="prissy-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
     <script src="https://js.stripe.com/v3/"></script>
     <script src="/script.js" defer></script>
+    <style>
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	table.center {
+  	margin-left:auto; 
+  	margin-right:auto;
+	}
+	</style>
   </head>
 
   <body>
+<img src="Prissy-on-the-Moon-Cover-Simple.jpg" alt="Prissy on The Moon Book" height="400">  
+<table class="center"><tr><td><b>On sale for $14.00. Place your order below.</b></td></tr>
+</table>
     <div class="sr-root">
       <div class="sr-main">
+           
         <form id="payment-form" class="sr-payment-form">
+          
           <div class="sr-combo-inputs-row">
             <div class="sr-input sr-card-element" id="card-element"></div>
           </div>
@@ -27,6 +43,7 @@
           </button>
         </form>
         <div class="sr-result hidden">
+        <img src="payment-complete.png" alt="Payment Complete!">
           <p>Payment completed<br /></p>
           <pre>
             <code></code>
