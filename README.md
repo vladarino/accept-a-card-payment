@@ -47,7 +47,7 @@ npm install
 npm run start
 ```
 
-If you see any errors in the terminal after executing the ``npm run start`` command, kill any running ``node`` processes then tray again.
+If you see any errors in the terminal after executing the ``npm run start`` command, kill any running ``node`` processes then try again.
 
 **3. Run a webhook locally:**
 
