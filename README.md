@@ -65,10 +65,21 @@ The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECR
 
 You should see events logged in the console where the CLI is running.
 
+**4. Access the application from a web browser:**
 
+http://localhost:4242/
+
+
+Credits:
+[@vladandral](https://linkedin.com/in/vandral)
+
+
+Code modified from https://github.com/stripe-samples/accept-a-card-payment Github repo, created by:
 [@adreyfus-stripe](https://twitter.com/adrind)
 [@bg-stripe](https://github.com/bg-stripe)
 [@yuki-stripe](https://github.com/yuki-stripe)
 [@thorsten-stripe](https://twitter.com/thorwebdev)
-[@vladandral](https://linkedin.com/in/vandral)
+
+
+
 
