@@ -1,6 +1,6 @@
 # Accepting a card payment
 
-Cards are one of the most popular ways to pay online. Stripe offers several ways to accept card payments, depending on your business needs.
+Cards are one of the most popular ways to pay online. Stripe offers several ways to accept card payments, depending on your business needs. This repository demonstrates how to use the Stripe Payments API to accept payments using a single-page application (selling a children's book).
 
 
 ## How to run locally
